@@ -18,6 +18,7 @@ SM3
 使用说明：
 -
 在main.cpp中修改特殊值即可运行相关代码（特殊值1为运行，特殊值0为停止）  
+![image](https://user-images.githubusercontent.com/95351319/181544922-ee1dcfbb-b1dc-43f8-9030-d5c2ac13ab8f.png)
 
 运行结果：
 -
