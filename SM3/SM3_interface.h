@@ -100,6 +100,7 @@ void iterator_sm3()
 		}
 	}
 	//输出：
+	cout << "计算文件hash......\n";
 	cout << "THE HASH IS :" << endl;
 	for (int i = 0; i < 8; i++)
 	{

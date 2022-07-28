@@ -3,7 +3,6 @@
 //hashÀ„∑® π”√SHA256
 #include<openssl/sha.h>
 #include<iostream>
-#include"define.h"
 #include"SHA256_interface.h"
 
 using namespace std;

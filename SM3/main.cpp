@@ -1,6 +1,5 @@
 ﻿#include<iostream>
 #include"SM3_naive_attack.h"
-//#include"SM3_function.h"
 #include"markle_tree.h"
 #include"SHA256_interface.h"
 #include"SM3_extension_attack.h"
@@ -21,8 +20,8 @@ using namespace std;
 #define SM3_optimize 0 //实行SM3优化算法
 //#define SM3_optimize 1
 
-//#define Markle_tree 0 //运行markle树
-#define Markle_tree 1
+#define Markle_tree 0 //运行markle树
+//#define Markle_tree 1
 
 #define SHA256 0//运行SHA256
 //#define SHA256 1
@@ -181,8 +180,18 @@ int main()
 #elif SHA256_extension_attack==1
 int main() 
 {
-	std::string x = "hello world";
-	cout << sha256(x) << endl;
+	unsigned char x[] = "hello world";
+	unsigned int IV[8];
+	SHA256_hash(x, IV);
+	cout << "the plaintext is:\n";
+	cout << x << endl;
+	cout << endl;
+	cout << "the hash is:\n";
+	for (int i = 0; i < 8; i++)
+	{
+		cout << hex << IV[i] << "     ";
+	}
+	cout << endl;
 	return 0;
 }
 #elif SM3_optimize==1
@@ -198,10 +207,14 @@ int main()
 	EVI_change_data(1);
 	EVI_change_data(4);
 	hash_root* root_2 = creat_markle_tree(1, 7);
-	search(root_1->root, root_2->root);
+	cout << "修改前：\n";
 	iteration(root_1->root);
 	cout << "\n\n\n\n\n\n\n";
+	cout << "修改后\n";
+	cout << "\n\n\n\n\n\n\n";
 	iteration(root_2->root);
+	cout << "纠错结果：\n";
+	search(root_1->root, root_2->root);
 
 
 }

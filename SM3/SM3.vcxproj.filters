@@ -20,28 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="define.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="SM3_function.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="analyse_tool.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="SM3_naive_attack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SM2_function.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SM2_interface.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SM2_attack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Bitcoin.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="SM3_extension_attack.h">

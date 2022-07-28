@@ -2,9 +2,8 @@
 //初次调试：这里只运算一个分组的内容（32bits）
 #include<iostream>
 #include<fstream>
-#include"define.h"
 using namespace std;
-//static char Data[128] = { '0' };
+//参数定义：
 static char Data[65] = { '\0' };//这里预留了一个空格符号
 static char Data_add[65] = { '\0' };//用于一些特殊情况
 static unsigned int words_0[68] = { 0 };

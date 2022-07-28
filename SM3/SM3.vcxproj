@@ -146,14 +146,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="define.h" />
     <ClInclude Include="SM3_function.h" />
-    <ClInclude Include="analyse_tool.h" />
     <ClInclude Include="SM3_naive_attack.h" />
-    <ClInclude Include="SM2_function.h" />
-    <ClInclude Include="SM2_interface.h" />
-    <ClInclude Include="SM2_attack.h" />
-    <ClInclude Include="Bitcoin.h" />
     <ClInclude Include="SM3_extension_attack.h" />
     <ClInclude Include="markle_tree.h" />
     <ClInclude Include="SM3_interface.h" />
